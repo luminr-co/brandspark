@@ -1,0 +1,1 @@
+export {default as HowHelpSection} from './page'
