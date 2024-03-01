@@ -1,5 +1,4 @@
 import React, { PropsWithChildren } from "react";
-import Link from "next/link";
 import { Button } from "../Button";
 
 interface Props extends PropsWithChildren {
@@ -10,10 +9,10 @@ interface Props extends PropsWithChildren {
 
 export default function LinkButton({ href, className, icon, children }: Props) {
   return (
-    <Link href={href}>
+    <a href={href}>
       <Button className={className} icon={icon}>
         {children}
       </Button>
-    </Link>
+    </a>
   );
 }
