@@ -2,6 +2,6 @@ import { StaticImageData } from "next/image";
 
 export default interface TestimonialEntity {
   testimonial: string;
-  image: StaticImageData;
   name: string;
+  position: string;
 }

@@ -4,10 +4,18 @@ import { ArrowIcon } from "@/core/assets/icons/ArrowIcon";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center mt-16 pt-1">
-      <h1 className="font-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl 2xl:text-6xl text-center w-10/12 flex flex-row justify-center items-center">
-        <span>Lightning Fast</span>
-        <span className="px-6 inline-block">
+    <section className="flex flex-col items-center pt-20 relative pb-36 lg:pb-60 xl:pb-60 2xl:pb-60">
+      <video
+        src="/videos/HeroSection/BrandSpark.mp4"
+        className="absolute top-0 left-0 object-cover w-full h-full -z-10"
+        autoPlay
+        loop
+        muted
+      />
+      <h1 className="font-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl 2xl:text-6xl text-center w-10/12 sm:flex md:flex lg:flex xl:flex 2xl:flex flex-row justify-center items-center ">
+        Lightning Fast
+        <br className="sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden" />
+        <span className="sm:px-6 md:px-6 xl:px-6 lg:px-6 2xl:px-6 px-2 inline-block">
           <LightningVectorImage />
         </span>
         <span>Edits,</span>
@@ -22,7 +30,7 @@ export default function HeroSection() {
         </span>
       </h3>
       <LinkButton
-        href=""
+        href="#calendly"
         icon={<ArrowIcon />}
         className="p-3 md:p-4 lg:p-5 xl:p-5 2xl:p-5"
       >

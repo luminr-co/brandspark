@@ -10,7 +10,7 @@ export default function NavBar() {
         <div className="w-20 px-1">
           <Logo />
         </div>
-        <LinkButton className="shadow-button" href="" icon={<ArrowIcon/>}>
+        <LinkButton className="shadow-button" href="#calendly" icon={<ArrowIcon/>}>
           <span className="hidden lg:inline-block md:inline-block xl:inline-block 2xl:inline-block">Scale your Business</span>
         </LinkButton>
       </div>

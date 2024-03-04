@@ -4,5 +4,5 @@ export default interface SuccessStoryEntity {
     story: string,
     name: string,
     position: string,
-    video: ReelEntity,
+    video: string,
 }

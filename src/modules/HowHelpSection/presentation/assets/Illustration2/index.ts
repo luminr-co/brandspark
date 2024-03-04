@@ -1,1 +1,0 @@
-export {default as Illustration2} from './Illustration2'
