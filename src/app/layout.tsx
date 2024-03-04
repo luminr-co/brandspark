@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`scroll-smooth`}>
-      <body className="bg-blackBackground text-white font-secondary">
+      <body className={` text-white font-secondary bg-blackBackground`} >
         <MainTemplate>{children}</MainTemplate>
       </body>
     </html>

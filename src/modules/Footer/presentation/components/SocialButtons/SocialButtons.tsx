@@ -7,19 +7,15 @@ export default function SocialButtons() {
   const socialIcons: SocialButtonProps[] = [
     {
       icon: <InstagramButton />,
+      href:'https://www.instagram.com/brandsparkvisuals/'
     },
-    {
-      icon: <FacebookButton />,
-    },
-    {
-      icon: <LinkedinButton />,
-    },
+  
   ];
 
   return (
     <div className="flex flex-row gap-3 mb-10">
       {socialIcons.map((socialButton, index) => (
-        <SocialButton icon={socialButton.icon} key={index} />
+        <SocialButton icon={socialButton.icon} href={socialButton.href} key={index} />
       ))}
     </div>
   );

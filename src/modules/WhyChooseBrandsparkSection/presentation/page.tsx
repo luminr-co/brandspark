@@ -4,6 +4,7 @@ import { WhyChooseBrandsparkEntity } from "../domain/entities/WhyChooseBrandspar
 import { ElectricVoltIcon } from "./assets/ElectricVoltIcon";
 import { InfiniteIcon } from "./assets/InfiniteIcon";
 import { ClockIcon } from "./assets/ClockIcon";
+import { LightingAsset } from "@/core/assets/images/LightingAsset";
 
 export default function WhyChooseBrandsparkSection() {
   const list: WhyChooseBrandsparkEntity[] = [
@@ -42,7 +43,7 @@ export default function WhyChooseBrandsparkSection() {
   ];
 
   return (
-    <section className="flex flex-col lg:gap-24 xl:gap-24 2xl:gap-24 gap-20 mt-44 md:mt-48 lg:mt-52 xl:mt-52 2xl:mt-52">
+    <section className="flex flex-col relative lg:gap-24 xl:gap-24 2xl:gap-24 gap-20 mt-44 md:mt-48 lg:mt-52 xl:mt-52 2xl:mt-52">
       <SectionHeader>
         Why Choose Brand
         <span className="block text-center lg:inline-block xl:inline-block 2xl:inline-block">
@@ -50,6 +51,9 @@ export default function WhyChooseBrandsparkSection() {
         </span>
       </SectionHeader>
       <WhyChooseBrandsparkList list={list} />
+      <div className="absolute -top-16 right-72 w-20 h-28 scale-y-100 rotate-90 scale-x-100">
+          <LightingAsset />
+        </div>
     </section>
   );
 }

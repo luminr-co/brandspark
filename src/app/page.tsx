@@ -9,21 +9,31 @@ import { SuccessStoriesSection } from "@/modules/SuccessStories/presentation";
 import { TestimonialSection } from "@/modules/Testimonials/presentation";
 import { WhyChooseBrandsparkSection } from "@/modules/WhyChooseBrandsparkSection/presentation";
 import { WhyNeedSection } from "@/modules/WhyNeedSection/presentation";
+import bgImage from "@/core/assets/images/brandspark_bg.png";
+import Image from "next/image";
+import { px } from "framer-motion";
 
 export default function Home() {
   return (
-    <>
+    <section className="overflow-x-hidden relative" >
+      <Image
+      src={bgImage}
+        width={650}
+        height={3000}
+        alt=""
+        className="w-full h-screen bg-cover absolute top-0 left-0 right-0 bottom-0 -z-30"
+      /> 
       <HeroSection />
-      <ReelsSection/>
+      <ReelsSection />
       <WhyNeedSection />
-      <HowHelpSection/>
-      <SuccessStoriesSection/>
-      <WhyChooseBrandsparkSection/>
-      <TestimonialSection/>
-      <PackagesSection/>
-      <FaqSection/>
-      <CalendlySection/>
-      <Footer/>
-    </>
+      <HowHelpSection />
+      <SuccessStoriesSection />
+      <WhyChooseBrandsparkSection />
+      <TestimonialSection />
+      <PackagesSection />
+      <CalendlySection />
+      <FaqSection />
+      <Footer />
+    </section>
   );
 }
