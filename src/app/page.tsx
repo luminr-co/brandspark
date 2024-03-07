@@ -16,13 +16,13 @@ import { px } from "framer-motion";
 export default function Home() {
   return (
     <section className="overflow-x-hidden relative" >
-      <Image
+      {/* <Image
       src={bgImage}
         width={650}
         height={3000}
         alt=""
         className="w-full h-screen bg-cover absolute top-0 left-0 right-0 bottom-0 -z-30"
-      /> 
+      />  */}
       <HeroSection />
       <ReelsSection />
       <WhyNeedSection />
