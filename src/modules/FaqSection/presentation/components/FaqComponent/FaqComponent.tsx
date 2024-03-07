@@ -23,7 +23,7 @@ export default function FaqComponent({ faq }: Props) {
           className="flex flex-row justify-between w-full items-center cursor-pointer"
           onClick={handleAnswerVisibility}
         >
-          <p className="text-2xl font-bold">{faq.question}</p>
+          <p className="text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-bold">{faq.question}</p>
           <span className="w-8 h-8">
             <AddIcon />
           </span>
