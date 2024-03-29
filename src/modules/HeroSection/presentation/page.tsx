@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <div className="relative">
       <NavBar />
-      <section className="flex flex-col items-center pt-20 pb-36 lg:pb-60 xl:pb-60 2xl:pb-60">
+      <section className="flex flex-col items-center pt-20 pb-36 lg:pb-60 xl:pb-60 2xl:pb-60 px-2">
         <video
           src="/videos/HeroSection/BrandSpark.mp4"
           className="absolute top-0 left-0 object-cover w-full h-full -z-10 bg-blend-screen"

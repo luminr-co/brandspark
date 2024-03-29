@@ -28,7 +28,7 @@ export default function HowHelpSection() {
     },
   ];
   return (
-    <section className="mt-32 pt-2 lg:mt-64 lg:pt-5 xl:mt-64 xl:pt-5 2xl:mt-64 2xl:pt-5 w-3/4 mx-auto flex flex-col gap-20 relative">
+    <section className="mt-32 pt-2 lg:mt-64 lg:pt-5 xl:mt-64 xl:pt-5 2xl:mt-64 2xl:pt-5 px-2 lg:w-3/4 mx-auto flex flex-col gap-20 relative">
       <SectionHeader>
         How Brand Spark Saves<span className="block">You From All These</span>{" "}
         Headaches
