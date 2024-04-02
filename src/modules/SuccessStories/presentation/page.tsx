@@ -7,7 +7,7 @@ export default function SuccessStoriesSection() {
   const stories: SuccessStoryEntity[] = [
     {
       story:
-        "Quality Content and the Editing is superior to all their competiotions.",
+        "Quality Content and the Editing is superior to all their competitors.",
       name: "Mike Dicioccio",
       position: "Founder & President, Social Chameleon",
 

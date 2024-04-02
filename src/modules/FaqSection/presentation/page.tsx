@@ -5,33 +5,39 @@ import { FaqList } from "./components/FaqList";
 import { LightingAsset } from "@/core/assets/images/LightingAsset";
 
 export default function FaqSection() {
-  const faq: FaqEntity[] =[
+  const faq: FaqEntity[] = [
     {
       question: "How fast will I receive my video?",
-      answer: "The delivery time for your videos depends on the package you choose. Typically, you can expect to receive your videos within a day to 2-3 days, ensuring you get your content promptly to meet your needs.",
+      answer:
+        "The delivery time for your videos is determined by the package you choose. Typically, you can anticipate to receive your videos within 1-2 days, ensuring that you have your content in time to meet your needs.",
     },
     {
       question: "How do I request videos?",
-      answer: "We'll grant you access to our internal system where you upload your videos with ease. Send us your videos, and we'll do the rest.",
+      answer:
+        "We will offer you access to our internal system, where you can easily post your films. Send us your videos, and we will do the rest.",
     },
     {
-      question: "Why wouldn’t I just hire my own editor?",
-      answer: "While you have the option to hire your own editor, it can often be a challenging and time-consuming process. At Unchained, we aim to simplify the process for you by assuming the responsibility of managing the editing process and conducting quality checks. This way, you can enjoy a hassle-free experience and trust in the quality of the final product.",
+      question: "Why wouldn't I just hire my own editor?",
+      answer:
+        "While you can hire your own editor, this can be a difficult and time-consuming task. BrandSpark aims to simplify the process for you by taking on the task of managing the editing process and executing quality checks. This way, you may have a hassle-free experience while being confident in the quality of the finished result.",
     },
     {
       question: "What if I’m not happy with you?",
-      answer: "This doesn't happen very often but if it does - you get unlimited revisions! We'll keep tweaking things until you absolutely love your videos.",
+      answer:
+        "This does not happen very often, but if it does, you have unlimited changes! We'll keep modifying until you're completely satisfied with your videos.",
     },
     {
       question: "Do you offer trials or make example videos?",
-      answer: "No, we do not. If you're looking to try Unchained out, one-off video is your best option.",
+      answer:
+        "No, we don't. If you want to check BransSpark out, a one-time video is your best bet.",
     },
     {
       question: "Can I cancel if I don’t like it?",
-      answer: "Absolutely, there are no contracts or long-term commitments. You can pause or cancel at any time. However, please note that if a video editor has already started working on your videos before the cancellation, a refund won't be available. If you have doubts, consider trying a one-off video to assess our service.",
-    }
+      answer:
+        "Without a doubt, there aren't any long-term agreements or contracts. Anytime you want, you can stop or stop it. Please be aware, though, that there won't be a reimbursement if a video editor has already begun working on your videos prior to the cancellation. If you're still unsure, think about seeing a demo video to see how our service works.",
+    },
   ];
-
+  
   return (
     <section className="mt-40 md:mt-44 lg:mt-56 xl:mt-60 2xl:mt-60 mx-auto relative">
       <div className="sm:w-1/2 md:w-1/2 xl:w-2/3 lg:w-2/3 2xl:w-2/3 mx-auto">
