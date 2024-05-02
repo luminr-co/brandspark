@@ -1,0 +1,6 @@
+export {default as MuIcon} from "./MuIcon"
+export {default as PraisedIcon} from "./PraisedIcon"
+export {default as SCIcon} from "./SCIcon"
+export {default as SFPIcon} from "./SFPIcon"
+export {default as TasrifIcon} from "./TasrifIcon"
+export {default as TCDMIcon} from "./TCDMIcon"
