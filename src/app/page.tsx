@@ -12,6 +12,7 @@ import { WhyNeedSection } from "@/modules/WhyNeedSection/presentation";
 import bgImage from "@/core/assets/images/brandspark_bg.png";
 import Image from "next/image";
 import { px } from "framer-motion";
+import { CompanyCaroselSection } from "@/modules/CompanyCaroselSection";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         className="w-full h-screen bg-cover absolute top-0 left-0 right-0 bottom-0 -z-30"
       />  */}
       <HeroSection />
+      <CompanyCaroselSection/>
       <ReelsSection />
       <WhyNeedSection />
       <HowHelpSection />
