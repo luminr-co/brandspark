@@ -36,7 +36,7 @@ const CompanyCaroselSection = () => {
     ]
 
   return (
-    <section className="mt-10 pt-2 lg:mt-14 lg:pt-5 xl:mt-24 xl:pt-5 2xl:mt-32 2xl:pt-5 px-2">
+    <section className="mt-10 pt-2 lg:mt-14 lg:pt-5 xl:mt-16 xl:pt-5 2xl:mt-32 2xl:pt-5 px-2">
         <h2 className="font-primary flex justify-center lg:text-4xl text-2xl md:text-3xl xl:text-5xl 2xl:text-5xl font-normal text-center relative">
           Clients Who Trust Us
           <div className="absolute -top-12 2xl:right-64 left-5 md:left-96 xl:right-64 2xl:left-96 translate-x-64 xl:translate-x-72 h-28 scale-y-100 rotate-90 scale-x-100">

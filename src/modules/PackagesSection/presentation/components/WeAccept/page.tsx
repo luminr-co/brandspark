@@ -5,7 +5,7 @@ const WeAccept = () => {
   return (
     <div className='text-center mt-16'>
         <h1 className='font-primary'>We Accept : </h1>
-        <div className="flex flex-col md:flex-row gap-16 items-center justify-center mt-10">
+        <div className="flex flex-col md:flex-row gap-16 items-center justify-center mt-10 mx-5">
             <PaypalIcon/>
             <WiseIcon/>
             <MastercardIcon/>
