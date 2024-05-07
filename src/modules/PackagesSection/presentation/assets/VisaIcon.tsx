@@ -1,6 +1,6 @@
 const VisaIcon = () => {
   return (
-    <svg width="96" height="36" viewBox="0 0 96 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg width="96" height="46" viewBox="0 0 96 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <mask id="mask0_774_461" style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="36">
 <rect x="0.48291" width="94.96" height="35.6992" fill="url(#pattern0_774_461)"/>
 </mask>
