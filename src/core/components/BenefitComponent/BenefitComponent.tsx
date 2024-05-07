@@ -2,6 +2,7 @@ import BenefitEntity from "@/core/domain/entities/BenefitEntity";
 import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 
+
 interface Props {
   benefit: BenefitEntity;
   variant: "left" | "right";
@@ -23,7 +24,7 @@ export default function BenefitComponent({ benefit, variant }: Props) {
         </h3>
         <p className="lg:text-base font-normal text-left">{benefit.description}</p>
       </div>
-      <Image src={benefit.illustration} alt="" />
+      <Image src={benefit.illustration!} alt={benefit.title}/>
     </div>
   );
 }

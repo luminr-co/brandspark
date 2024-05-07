@@ -1,10 +1,9 @@
 import { SectionHeader } from "@/core/components/SectionHeader";
 import { BenefitsSection } from "@/core/components/WhyNeedSection";
 import BenefitEntity from "@/core/domain/entities/BenefitEntity";
-import img1 from "./assets/s1.png";
-import img2 from "./assets/s2.png";
-import img3 from "./assets/s3.png";
+
 import { LightingAsset } from "@/core/assets/images/LightingAsset";
+import { Img1, Img2, Img3 } from "./assets";
 
 export default function HowHelpSection() {
   const benefits: BenefitEntity[] = [
@@ -12,19 +11,19 @@ export default function HowHelpSection() {
       title: "No More Declining Engagement",
       description:
         "Picture a scenario where your audience not only stops scrolling but starts engaging eagerly with your content. With our short form content expertise, watch your engagement metrics reverse the decline, creating a ripple effect of increased brand interaction.",
-      illustration: img1,
+      illustration: Img1,
     },
     {
       title: "Easily Attract New Customers",
       description:
         "Our tailored short form content acts as a magnetic force, attracting a fresh wave of interest and curiosity. Say goodbye to the struggle of expanding your customer base.",
-      illustration: img2,
+      illustration: Img2,
     },
     {
       title: "Growth and Revenue Skyrockets",
       description:
         "Our strategic approach to short form content ensures that every word contributes to your brand's success. Experience the satisfaction of seeing your investment translate into measurable and substantial results.",
-      illustration: img3,
+      illustration: Img3,
     },
   ];
   return (
