@@ -82,6 +82,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: setup ssh key
+        run: |
+          echo "${{ sercrets.SERVER_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
       - name: Download artifacts to server
         run: ssh ${{secrets.SERVER_USERNAME}}@${{secrets.SERVER_IP}} wget ${{needs.build.steps.outputs.url}}
             
