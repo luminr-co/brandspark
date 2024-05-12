@@ -7,6 +7,7 @@ export default function ReelsSection() {
     "https://www.dropbox.com/scl/fi/1m1r5fw41xkvutllk2rkt/Tom-Ferry-Edited.mp4?rlkey=fag8wxqvte7u6qep76xcbu3ri&dl=0&raw=1",
     "https://www.dropbox.com/scl/fi/nt58zn68mcbig7a8n8dm8/Top-3-things-that-hsbo-do-on-facebook.mp4?rlkey=hly0dx3iksaguwqbws3jgj4v1&dl=0&raw=1",
     // "https://www.dropbox.com/scl/fi/th2872e2z4i799jub1y8q/2.mp4?rlkey=mspmjfa9ua9ji08tq4l8w6ln6&raw=1",
+    "https://www.dropbox.com/scl/fi/r34w1xxf3e4vmizq9z403/Power-Shifts-Promo.mp4?rlkey=taw49df16ih31omfuvte9tgdg&st=qaob9was&dl=0&raw=1",
     "https://www.dropbox.com/scl/fi/4uumn06cb542p7rlf4lvn/RST.mp4?rlkey=vh7o6n8siobfflvfbacfx65gc&raw=1",
     "https://www.dropbox.com/scl/fi/vs2v9c5jaihcruunmq6sv/First-Time-Home-Buyer-Characteristic.mp4?rlkey=no2om2gzeinlf67t6150l6gbb&dl=0&raw=1",
     "https://www.dropbox.com/scl/fi/ckqm0fc1xpdue9in08ako/Eric-Brewer.mp4?rlkey=o2mkyc2ff1n1rxlkj5h9c28vx&dl=0&raw=1",

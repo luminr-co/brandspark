@@ -1,7 +1,5 @@
 import BenefitEntity from "@/core/domain/entities/BenefitEntity";
-import img1 from "./assets/p1.png";
-import img2 from "./assets/p2.png";
-import img3 from "./assets/p3.png";
+import {Img1,Img2,Img3} from './assets'
 import { BenefitsSection } from "@/core/components/WhyNeedSection";
 import { SectionHeader } from "@/core/components/SectionHeader";
 import { LightingAsset } from "@/core/assets/images/LightingAsset";
@@ -12,20 +10,20 @@ export default function WhyNeedSection() {
       title: "You Are Losing the Battle for Attention",
       description:
         "Every scroll past your content feels like a missed opportunity, leaving you wondering if your brand will ever break through the relentless noise.",
-      illustration: img1,
+      illustration: Img1,
     },
     {
       title: "Your Content is Sinking in the Sea of Similarity",
       description:
         "If your content doesn't stand out, it becomes just another drop in the vast ocean of online information. Your uniqueness gets lost, and your brand risks becoming indistinguishable from the competition.",
-      illustration: img2,
+        illustration:Img2
     },
     {
       title:
         "You Are Spending Multiple Figures on Marketing, but Getting No Results",
       description:
         "If your content doesn't stand out, it becomes just another drop in the vast ocean of online information. Your uniqueness gets lost, and your brand risks becoming indistinguishable from the competition.",
-      illustration: img3,
+      illustration: Img3,
     },
   ];
 
