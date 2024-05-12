@@ -99,5 +99,5 @@ jobs:
             StrictHostKeyChecking no
           END
       - name: Download artifacts to server
-        run: ssh server wget ${{needs.build.steps.outputs.url}}
+        run: ssh server wget ${{needs.build.outputs.url}}
             
