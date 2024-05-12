@@ -70,6 +70,7 @@ jobs:
       - name: Copy static and public folders
         run: cp -r public ./.next/standalone && cp -r ./.next/static ./.next/standalone/.next
       - uses: actions/upload-artifact@v4
+        id: artifact-upload
         with:
           name: my-artifact
           path: ./.next/standalone
@@ -79,10 +80,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: my-artifact
-          path: .
-      - name: Display structure of downloaded files
-        run: ls -R .
+      - name: Download artifacts to server
+        run: ssh ${{secrets.SERVER_USERNAME}}@${{secrets.SERVER_IP}} wget ${{needs.build.steps.artifact-upload.artifact-url}}
             
