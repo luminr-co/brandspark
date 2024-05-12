@@ -103,5 +103,5 @@ jobs:
             StrictHostKeyChecking no
           END
       - name: Download artifacts to server
-        run: scp server standalone.tar:~/
+        run: scp standalone.tar server:~/
             
