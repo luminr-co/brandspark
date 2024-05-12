@@ -105,5 +105,5 @@ jobs:
       - name: Download artifacts to server
         run: scp standalone.tar server:~/
       - name: Run deploy script
-        run: ssh server ~/deploy.sh
+        run: ssh server /root/deploy.sh
             
