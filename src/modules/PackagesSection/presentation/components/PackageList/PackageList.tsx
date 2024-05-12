@@ -3,6 +3,7 @@ import { PackageComponent } from "../PackageComponent";
 import SingleSampleEditComponent, {
   SingleSampleEditProps,
 } from "../SingleSampleEditComponent/SingleSampleEditComponent";
+import { WeAccept } from "../WeAccept";
 
 interface Props {
   packages: PackageEntity[];
@@ -24,6 +25,7 @@ export default function PackageList({ packages }: Props) {
           price={lastpackage.price}
         />
       </div>
+      <WeAccept/>
     </div>
   );
 }

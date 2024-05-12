@@ -1,0 +1,5 @@
+export {default as GustoIcon} from './GustoIcon'
+export {default as MastercardIcon} from './MastercardIcon'
+export {default as PaypalIcon} from './PaypalIcon'
+export {default as VisaIcon} from './VisaIcon'
+export {default as WiseIcon} from './WiseIcon'
