@@ -28,6 +28,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    outputs:
+      url: ${{steps.artifact-upload.outputs.artifact-url}}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -81,5 +83,5 @@ jobs:
     needs: build
     steps:
       - name: Download artifacts to server
-        run: ssh ${{secrets.SERVER_USERNAME}}@${{secrets.SERVER_IP}} wget ${{needs.build.steps.artifact-upload.artifact-url}}
+        run: ssh ${{secrets.SERVER_USERNAME}}@${{secrets.SERVER_IP}} wget ${{needs.build.steps.outputs.url}}
             
