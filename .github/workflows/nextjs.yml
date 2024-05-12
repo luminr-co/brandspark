@@ -83,11 +83,21 @@ jobs:
     needs: build
     steps:
       - name: setup ssh key
+        env:
+            SSH_USER: ${{ secrets.SERVER_USERNAME }}
+            SSH_HOST: ${{ secrets.SERVER_IP }}
         run: |
           mkdir ~/.ssh
           chmod 700 ~/.ssh
           echo "${{ secrets.SERVER_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+          cat >> ~/.ssh/config <<END
+          Host server
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/id_rsa
+            StrictHostKeyChecking no
+          END
       - name: Download artifacts to server
-        run: ssh ${{secrets.SERVER_USERNAME}}@${{secrets.SERVER_IP}} wget ${{needs.build.steps.outputs.url}}
+        run: ssh server wget ${{needs.build.steps.outputs.url}}
             
