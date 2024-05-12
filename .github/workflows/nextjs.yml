@@ -71,17 +71,21 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Copy static and public folders
         run: cp -r public ./.next/standalone && cp -r ./.next/static ./.next/standalone/.next
+      - name: 'Tar files'
+        run: tar -cvf standalone.tar .next/standalone
       - uses: actions/upload-artifact@v4
         id: artifact-upload
         with:
           name: my-artifact
-          path: ./.next/standalone
-
+          path: standalone.tar
   # Deployment job
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: my-artifact
       - name: setup ssh key
         env:
             SSH_USER: ${{ secrets.SERVER_USERNAME }}
@@ -99,5 +103,5 @@ jobs:
             StrictHostKeyChecking no
           END
       - name: Download artifacts to server
-        run: ssh server wget ${{needs.build.outputs.url}}
+        run: scp server standalone.tar:~/
             
