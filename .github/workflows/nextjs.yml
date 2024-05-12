@@ -72,12 +72,12 @@ jobs:
       - name: Copy static and public folders
         run: cp -r public ./.next/standalone && cp -r ./.next/static ./.next/standalone/.next
       - name: 'Tar files'
-        run: tar -cvf standalone.tar .next/standalone
+        run: cd .next && tar -cvf ~/standalone.tar ./standalone
       - uses: actions/upload-artifact@v4
         id: artifact-upload
         with:
           name: my-artifact
-          path: standalone.tar
+          path: ~/standalone.tar
   # Deployment job
   deploy:
     runs-on: ubuntu-latest
