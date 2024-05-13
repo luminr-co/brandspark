@@ -11,8 +11,8 @@ export default function ArrowLeftIcon() {
       <path
         d="M37 22L28 32.1818L37 43"
         stroke="#181818"
-        stroke-width="4"
-        stroke-linecap="round"
+        strokeWidth="4"
+        strokeLinecap="round"
       />
     </svg>
   );
