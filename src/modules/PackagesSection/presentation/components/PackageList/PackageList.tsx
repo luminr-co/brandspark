@@ -11,7 +11,7 @@ interface Props {
 export default function PackageList({ packages }: Props) {
   const lastpackage: SingleSampleEditProps = {
     title: "Single Sample Edit",
-    price: "$100/reel",
+    price: "$80/reel",
   };
   return (
     <div className="flex justify-center flex-col w-full">

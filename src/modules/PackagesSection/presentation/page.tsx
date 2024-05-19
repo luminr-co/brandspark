@@ -9,7 +9,7 @@ export default function PackagesSection() {
     {
       title: "Spark",
       
-      price: "$1200",
+      price: "$1000",
       points: [
         "15 Short Form Videos",
         "Audio Enhancing",
@@ -20,7 +20,7 @@ export default function PackagesSection() {
     {
       title: "Lightning",
       
-      price: "$2300",
+      price: "$1900",
       points: [
         "30 Short Form Videos",
         "Audio Enhancing",
@@ -32,7 +32,7 @@ export default function PackagesSection() {
 
   ];
   return (
-    <section className="mt-36 md:mt-44 lg:mt-48 xl:mt-64 relative">
+    <section className="mt-36 md:mt-44 lg:mt-48 xl:mt-64 relative" id = "packages">
       <SectionHeader>Flexible Packages for All</SectionHeader>
       <PackageList packages={packages} />
       <div className="absolute -top-20 right-72 w-20 h-28 scale-y-100 rotate-90 scale-x-100">

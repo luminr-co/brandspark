@@ -12,11 +12,11 @@ export default function NavBar() {
         </div>
         <LinkButton
           className="shadow-button"
-          href="#calendly"
+          href="#packages"
           icon={<ArrowIcon />}
         >
           <span className="hidden lg:inline-block md:inline-block xl:inline-block 2xl:inline-block">
-            Scale your Business
+            Explore our Packages
           </span>
         </LinkButton>
       </div>

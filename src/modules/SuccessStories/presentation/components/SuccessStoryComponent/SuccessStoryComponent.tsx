@@ -9,7 +9,9 @@ interface Props {
 export default function SuccessStoryComponent({ successStory }: Props) {
   return (
     <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row lg:justify-between xl:justify-between 2xl:justify-between items-center justify-center gap-11 ">
-      <ReelComponent reel={successStory.video} />
+      <div className="min-w-[305px] min-h-[553px]">
+        <ReelComponent reel={successStory.video} />
+      </div>
       <div className="flex flex-col gap-12 items-start xl:items-start 2xl:items-start px-2">
         <QuotationMarkIcon />
         <div className="w-full ">

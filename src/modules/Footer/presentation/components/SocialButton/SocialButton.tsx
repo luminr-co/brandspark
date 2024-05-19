@@ -4,5 +4,5 @@ export interface SocialButtonProps {
 }
 
 export default function SocialButton({ icon, href }: SocialButtonProps) {
-  return(<a href={href}> <div className="p-2 bg-yellow">{icon}</div></a>)
+  return(<a href={href} target="_blank"> <div className="p-2 bg-yellow">{icon}</div></a>)
 }
