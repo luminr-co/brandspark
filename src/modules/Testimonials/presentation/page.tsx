@@ -17,7 +17,7 @@ export default function TestimonialSection() {
     {
       testimonial:
         "“Brand Spark Visuals is an absolute powerhouse! Their creativity ignites every frame, crafting videos that leap off the screen with vibrancy and allure. From the first click to the final cut, their team orchestrates a symphony of visuals that captivate and inspire.”",
-      position: "The Praised Media",
+      position: "Founder, The Praised Media",
       name: "Michael Hudson Founder",
     },
     {

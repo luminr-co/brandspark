@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FacebookButton } from "../../assets/FacebookButton";
 import { InstagramButton } from "../../assets/InstagramButton";
 import { LinkedinButton } from "../../assets/LinkedinButton";
@@ -9,7 +10,10 @@ export default function SocialButtons() {
       icon: <InstagramButton />,
       href:'https://www.instagram.com/brandsparkvisuals/'
     },
-  
+    {
+      icon:<LinkedinButton/>,
+      href:'https://www.linkedin.com/company/brand-spark-visuals/'
+    }
   ];
 
   return (
