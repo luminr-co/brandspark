@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
-  assetPrefix:"https://luminr-co.github.io/brandspark/"
+  basePath:"/brandspark"
 };
 
 module.exports = nextConfig;
