@@ -12,14 +12,14 @@
   font-family: "Monument Extended";
   font-style: normal;
   font-weight: normal;
-  src: url("/brandspark/fonts/MonumentExtended-Regular.otf") format("opentype");
+  src: url("/fonts/MonumentExtended-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Monument Extended";
   font-style: normal;
   font-weight: bold;
-  src: url("/brandspark/fonts/MonumentExtended-Bold.otf") format("opentype");
+  src: url("/fonts/MonumentExtended-Bold.otf") format("opentype");
 }
 
 .bg-image {
