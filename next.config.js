@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: "standalone",
-  basePath:"/brandspark",
-  assetPrefix: '/brandspark',
+  output: "standalone",
+  basePath:"",
+  assetPrefix: '',
 };
 
 module.exports = nextConfig;
